@@ -61,7 +61,7 @@ class IdeaLaunchProcessor extends StringProcessor {
 
         builder.element('option', attributes: {
           'name': 'filePath',
-          'value': '\$PROJECT_DIR\$/lib/main-$_flavorName.dart',
+          'value': '\$PROJECT_DIR\$/lib/main.dart',
         });
 
         builder.element('method', attributes: {

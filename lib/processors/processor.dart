@@ -165,26 +165,26 @@ class Processor extends AbstractProcessor<void> {
       ),
 
       //Flutter
-      'flutter:flavors': NewFileStringProcessor(
-        K.flutterFlavorPath,
-        FlutterFlavorsProcessor(config: pubspec.flavorizr),
-        config: pubspec.flavorizr,
-      ),
-      'flutter:app': CopyFileProcessor(
-        K.tempFlutterAppPath,
-        K.flutterAppPath,
-        config: pubspec.flavorizr,
-      ),
-      'flutter:pages': CopyFolderProcessor(
-        K.tempFlutterPagesPath,
-        K.flutterPagesPath,
-        config: pubspec.flavorizr,
-      ),
-      'flutter:targets': FlutterTargetsFileProcessor(
-        K.tempFlutterMainPath,
-        K.flutterPath,
-        config: pubspec.flavorizr,
-      ),
+      // 'flutter:flavors': NewFileStringProcessor(
+      //   K.flutterFlavorPath,
+      //   FlutterFlavorsProcessor(config: pubspec.flavorizr),
+      //   config: pubspec.flavorizr,
+      // ),
+      // 'flutter:app': CopyFileProcessor(
+      //   K.tempFlutterAppPath,
+      //   K.flutterAppPath,
+      //   config: pubspec.flavorizr,
+      // ),
+      // 'flutter:pages': CopyFolderProcessor(
+      //   K.tempFlutterPagesPath,
+      //   K.flutterPagesPath,
+      //   config: pubspec.flavorizr,
+      // ),
+      // 'flutter:targets': FlutterTargetsFileProcessor(
+      //   K.tempFlutterMainPath,
+      //   K.flutterPath,
+      //   config: pubspec.flavorizr,
+      // ),
 
       //iOS
       'ios:xcconfig': IOSXCConfigTargetsFileProcessor(

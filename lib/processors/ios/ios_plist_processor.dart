@@ -55,7 +55,7 @@ class IOSPListProcessor extends StringProcessor {
 
   void _updateCFBundleName(XmlElement root) => _updatePListValueAtKey(
         root,
-        'CFBundleName',
+        'CFBundleDisplayName',
         '\$(BUNDLE_NAME)',
       );
 
